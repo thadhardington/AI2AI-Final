@@ -1,0 +1,157 @@
+/* Custom Basketball Font - loaded dynamically in JavaScript */
+
+/* Allen Iverson Replacement Styles */
+
+.allen-iverson-replacement {
+  font-family: 'Basketball', 'Arial Black', 'Impact', sans-serif;
+  /* Background image set dynamically in JavaScript */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  min-height: clamp(250px, 50vw, 400px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: slideIn 0.5s ease-out;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  container-type: inline-size;
+}
+
+.ai-close-button {
+  position: absolute;
+  top: 3px;
+  right: 6px;
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 14px;
+  font-weight: bold;
+  width: auto;
+  height: auto;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  padding: 0;
+  line-height: 1;
+  z-index: 100;
+  pointer-events: auto;
+  user-select: none;
+}
+
+.ai-close-button:hover {
+  color: rgba(255, 255, 255, 0.9);
+  transform: scale(1.1);
+}
+
+.ai-close-button:active {
+  transform: scale(0.95);
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.ai-header {
+  margin-top: clamp(-12px, -2vw, -18px);
+  text-align: center;
+  margin-bottom: 0px;
+  padding-top: 0;
+  padding-bottom: 0px;
+  position: relative;
+}
+
+.ai-header::after {
+  content: '';
+  display: block;
+  width: clamp(20px, 4vw, 25px);
+  height: clamp(3px, 0.6vw, 4px);
+  background-color: #ffffff;
+  margin: 0px auto clamp(5px, 1.2vw, 8px);
+  opacity: 0.9;
+}
+
+.ai-header h3 {
+  font-family: 'Basketball', 'Arial Black', 'Impact', sans-serif;
+  color: #ffffff;
+  opacity: 0.9;
+  font-size: clamp(32px, 8cqi, 48px);
+  font-weight: normal;
+  margin: 0;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.01em;
+}
+
+.ai-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5px clamp(8px, 4vw, 60px);
+  flex: 0;
+}
+
+.ai-fact {
+  width: 100%;
+  max-width: 550px;
+  color: #ffffff;
+  opacity: 0.9;
+  text-align: center;
+}
+
+.ai-fact p {
+  font-family: 'Basketball', 'Arial Black', 'Impact', sans-serif;
+  margin: 0;
+  line-height: 1.0;
+  color: #ffffff;
+  text-align: center;
+  font-size: clamp(28px, 6cqi, 36px);
+  font-weight: normal;
+  letter-spacing: 0.01em;
+}
+
+/* Desktop responsive design using clamp() for fluid typography */
+
+/* High DPI displays (Retina, 4K, etc.) */
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+       only screen and (min-resolution: 192dpi) {
+  .allen-iverson-replacement {
+    /* Optimize background image rendering on high DPI screens */
+    background-size: cover;
+    image-rendering: -webkit-optimize-contrast;
+  }
+}
+
+/* Accessibility: Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  .allen-iverson-replacement {
+    animation: none;
+  }
+
+  .ai-close-button {
+    transition: none;
+  }
+
+  .ai-close-button:hover {
+    transform: none;
+  }
+
+  .ai-close-button:active {
+    transform: none;
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Allen Iverson > AI",
+  "version": "1.0.0",
+  "description": "Replaces mentions of 'AI' on LinkedIn with Allen Iverson photos and fun facts",
+  "permissions": [
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://*.linkedin.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://*.linkedin.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["AIBackground.jpg", "ai2ai_background.jpg", "ai2aibackgroundv2.jpg", "ai2ai_backgroundv3.jpg", "Basketball.otf"],
+      "matches": ["https://*.linkedin.com/*"]
+    }
+  ]
+}
