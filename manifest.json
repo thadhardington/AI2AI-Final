@@ -29,5 +29,13 @@
     "32": "Icons/AI2AI_32px.png",
     "48": "Icons/AI2AI_48px.png",
     "128": "Icons/AI2AI_128px.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "Icons/AI2AI_16px.png",
+      "32": "Icons/AI2AI_32px.png",
+      "48": "Icons/AI2AI_48px.png",
+      "128": "Icons/AI2AI_128px.png"
+    }
   }
 }
