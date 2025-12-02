@@ -54,8 +54,6 @@ const ALLEN_IVERSON_FACTS = [
   "Allen Iverson played 14 seasons in the NBA as both a shooting guard and point guard. "
 ];
 
-// Allen Iverson image
-const ALLEN_IVERSON_IMAGE = "https://m.media-amazon.com/images/I/81RCr4N-RyL.jpg";
 
 // Keep track of processed posts to avoid duplicates
 const processedPosts = new WeakSet();
@@ -71,7 +69,7 @@ function getRandomFact() {
 // Function to check if text contains "AI" (case insensitive, whole word)
 function containsAI(text) {
   // Match "AI" as a standalone word, not part of other words
-  const aiPattern = /\b(AI|A\.I\.|artificial intelligence)\b/gi;
+  const aiPattern = /\b(AI|A\.I\.|artificial intelligence|LLM|OpenAI|ChatGPT|Sora|Sam Altman|Gemini|nano banana|Anthropic|Claude)\b/gi;
   return aiPattern.test(text);
 }
 
