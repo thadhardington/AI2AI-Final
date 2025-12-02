@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "The Answer 2 AI",
+  "name": "AI 2 AI",
   "version": "1.0.0",
   "description": "Replaces mentions of 'AI' on LinkedIn with Allen Iverson fun facts",
   "permissions": [
