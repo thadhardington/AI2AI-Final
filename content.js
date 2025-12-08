@@ -8,9 +8,9 @@ const fontFace = new FontFace('Basketball', `url(${fontUrl})`, {
 
 fontFace.load().then((loadedFont) => {
   document.fonts.add(loadedFont);
-  console.log('🏀  Basketball font loaded!');
+  console.log('AI2AI: Basketball font loaded.');
 }).catch((error) => {
-  console.warn('Basketball font failed to load, using fallback fonts:', error);
+  console.warn('AI2AI: Basketball font failed to load, using fallback fonts:', error);
   // Fallback fonts ('Arial Black', 'Impact') will be used automatically via CSS
 });
 
@@ -69,7 +69,7 @@ function getRandomFact() {
 // Function to check if text contains "AI" (case insensitive, whole word)
 function containsAI(text) {
   // Match "AI" as a standalone word, not part of other words
-  const aiPattern = /\b(AI|A\.I\.|artificial intelligence|LLM|OpenAI|ChatGPT|Sora|Sam Altman|Gemini|nano banana|Anthropic|Claude)\b/gi;
+  const aiPattern = /\b(AI|A\.I\.|artificial intelligence|LLM|OpenAI|ChatGPT|Sora|Sam Altman|Gemini|nano banana|Anthropic|Claude|Firefly|Omniplus)\b/gi;
   return aiPattern.test(text);
 }
 
@@ -110,7 +110,7 @@ function createAllenIversonContent(post, originalWrapper) {
       // Mark as manually closed so it won't be replaced again
       closedPosts.add(post);
       processedPosts.delete(post);
-      console.log('🏀 Restored original post!');
+      console.log('AI2AI: Restored original post.');
     });
   }
 
@@ -155,7 +155,7 @@ function processPost(post) {
     const replacement = createAllenIversonContent(post, originalWrapper);
     post.appendChild(replacement);
 
-    console.log('🏀 Replaced AI post with Allen Iverson content!');
+    console.log('AI2AI: Replaced AI post with Allen Iverson fact.');
   }
 }
 
@@ -174,12 +174,12 @@ function observeFeed() {
   const feedContainer = document.querySelector('.scaffold-layout__main, main');
 
   if (!feedContainer) {
-    console.log('Feed container not found, retrying...');
+    console.log('AI2AI: Feed container not found, retrying...');
     setTimeout(observeFeed, 1000);
     return;
   }
 
-  console.log('🏀 Allen Iverson extension is watching for AI mentions...');
+  console.log('AI2AI: Extension is watching for AI mentions.');
 
   // Initial scan
   scanPosts();
@@ -205,4 +205,4 @@ if (document.readyState === 'loading') {
   observeFeed();
 }
 
-console.log('🏀 Allen Iverson > AI extension loaded!');
+console.log('AI2AI: Extension loaded.');
