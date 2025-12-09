@@ -19,23 +19,23 @@
   ],
   "web_accessible_resources": [
     {
-      "resources": ["ai2ai_backgroundv3.jpg", "AI2AI_Icon.jpg", "Basketball.otf", "Icons/AI2AI_16px.png","Icons/AI2AI_32px.png",
-        "Icons/AI2AI_48px.png", "Icons/AI2AI_128px.png"],
+      "resources": ["ai2ai_backgroundv3.jpg", "Basketball.otf", "Icons/ai2ai_16px.png", "Icons/AI2AI_32px.png",
+        "Icons/ai2ai_48px.png", "Icons/ai2ai_128px.png"],
       "matches": ["https://*.linkedin.com/*"]
     }
   ],
   "icons": {
-    "16": "Icons/AI2AI_16px.png",
+    "16": "Icons/ai2ai_16px.png",
     "32": "Icons/AI2AI_32px.png",
-    "48": "Icons/AI2AI_48px.png",
-    "128": "Icons/AI2AI_128px.png"
+    "48": "Icons/ai2ai_48px.png",
+    "128": "Icons/ai2ai_128px.png"
   },
   "action": {
     "default_icon": {
-      "16": "Icons/AI2AI_16px.png",
+      "16": "Icons/ai2ai_16px.png",
       "32": "Icons/AI2AI_32px.png",
-      "48": "Icons/AI2AI_48px.png",
-      "128": "Icons/AI2AI_128px.png"
+      "48": "Icons/ai2ai_48px.png",
+      "128": "Icons/ai2ai_128px.png"
     }
   }
 }
