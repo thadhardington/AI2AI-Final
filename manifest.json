@@ -19,8 +19,15 @@
   ],
   "web_accessible_resources": [
     {
-      "resources": ["ai2ai_backgroundv3.jpg", "Basketball.otf", "Icons/ai2ai_16px.png", "Icons/AI2AI_32px.png",
-        "Icons/ai2ai_48px.png", "Icons/ai2ai_128px.png"],
+      "resources": [
+        "ai2ai_backgroundv3.jpg",
+        "Basketball.otf",
+        "styles.css",
+        "Icons/ai2ai_16px.png",
+        "Icons/AI2AI_32px.png",
+        "Icons/ai2ai_48px.png",
+        "Icons/ai2ai_128px.png"
+      ],
       "matches": ["https://*.linkedin.com/*"]
     }
   ],
